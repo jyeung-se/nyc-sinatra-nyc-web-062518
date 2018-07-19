@@ -1,6 +1,11 @@
 <h1>Creation of Figure</h1>
 
 <form action="/figures" method="post">
-  <input type="text" name="figure_name"  placeholder="name">
+  <p><input type="text" name="figure[name]" placeholder="name"></p><br>
+  <!-- <p><input type="text" name="figure[title_ids][]"></p><br> -->
+  <!-- <p><input type="text" name="figure[landmark_ids][]"></p><br> -->
+  <p><input type="text" name="landmark[name]" placeholder="landmark_name"></p><br>
+  <p><input type="text" name="title[name]" placeholder="title_name"></p><br>
+
   <button type="submit">Create New Figure</button>
 </form>
